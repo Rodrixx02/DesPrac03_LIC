@@ -4,34 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queres gaseosa - One Page</title>
-
+    <!--Boostrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--Estilos de fullpage.js-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Shojumaru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles1.css">
 </head>
-<body>
+<body style="background-color: #FFFACD;">
 
+
+<nav class="navbar fixed-top navbar-expand justify-content-start navbar-dark p-3 shadow-lg" style="background-color: #4d694e;">
 <!--Menu de navegacion funcional-->
-<ul id="menu">
-    <li data-menuanchor="inicio"><a href="#inicio">Inicio</a></li>
-    <li data-menuanchor="presentacion"><a href="#presentacion">Presentacion</a></li>
-    <li data-menuanchor="Productos"><a href="#servicios">Productos</a></li>
-    <li data-menuanchor="galeria"><a href="#galeria">Galeria</a></li>
-    <li data-menuanchor="contacto"><a href="#contacto">Contacto</a></li>
+<ul id="menu" class="navbar-nav gap-4">
+    <li data-menuanchor="inicio" class="navbar-brand titulo"><a href="#inicio" class="nav-link">Inicio <img src="https://flagcdn.com/jp.svg" class="rounded shadow-lg" alt="Japón" style="width: 40px; height: 24px; object-fit: cover; margin-left: 8px; margin-top: -3px;"></a></li>
+    <li data-menuanchor="presentacion" class="nav-item titulo"><a href="#presentacion" class="nav-link">Presentacion</a></li>
+    <li data-menuanchor="productos" class="nav-item titulo"><a href="#productos" class="nav-link">Productos</a></li>
+    <li data-menuanchor="galeria" class="nav-item titulo"><a href="#galeria" class="nav-link">Galeria</a></li>
+    <li data-menuanchor="contacto" class="nav-item titulo"><a href="#contacto" class="nav-link">Contacto</a></li>
 </ul>
+</nav>
+
 
 <!--contenedor principal de FullPage-->
 <div id="fullpage">
-    <div class="section" style="background-color: #FFFACD;">
+
+    <!--Seccion de Inicio-->
+    <div class="section" >
         <h1 class="purple">Japanese Sodas</h1>
         <p class="purple">炭酸飲料はいかがですか？</p>
     </div>
 
+    <!--Seccion de presentacion-->
+    <div class="section" >
+        <h2 class="purple">Que gaseosas toman en japon?</h2>
+    </div>
 
+    <!--Productos/servicios-->
+    <div class="section">
+        <h2 class="purple">Productos</h2>
+    </div>
 
+    <!--Galeria-->
+    <div class="section">
+        <h2 class="purple">Galeria de Imagenes</h2>
+    </div>
+
+    <div class="section">
+        <h2 class="purple">Contactanos</h2>
+    </div>
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        anchors: ['inicio','presentacion','productos','galeria','contacto'],
+        menu: '#menu',
+        navigation: true, 
+        navigationPosition: 'right',
+        scrollingSpeed: 700
+    });
+});
+</script>
 
 </body>
 </html>

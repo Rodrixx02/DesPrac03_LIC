@@ -1,3 +1,18 @@
 .purple{
     color: #5f4a8b;
+    font-family: 'Shojumaru', system-ui;
+}
+
+.titulo{
+    font-family: "Shojumaru", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+.section {
+    text-align: center; font-family: Arial;
 }
