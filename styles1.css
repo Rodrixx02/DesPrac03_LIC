@@ -1,3 +1,76 @@
 .purple{
-    color: #5f4a8b;
+    color: #0b0121;
+    font-family: 'Shojumaru', system-ui;
+  
+}
+
+.nunito-fuente{
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#SeccionPresentacion {
+   background: linear-gradient(135deg, #f1a7f1 0%, #fad0c4 100%);
+}
+
+#SeccionProductos{
+background: linear-gradient(90deg in oklch, oklch(96.06% 0.0331 139.22) 0.0%, oklch(79.53% 0.0344 141.33) 20.0%, oklch(69.29% 0.0469 151.90) 40.0%, oklch(71.65% 0.0648 161.41) 60.0%, oklch(85.83% 0.0827 163.52) 80.0%, oklch(98.03% 0.0271 177.28) 100.0%);
+}
+
+
+.titulo{
+    font-family: "Shojumaru", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fp-controlArrow {
+    border: none !important;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 40px;
+    color: white;
+    width: auto !important;
+    height: auto !important;
+}
+
+/*flecha izquierda*/
+.fp-controlArrow.fp-prev{
+    left: 15px;
+}
+
+.fp-controlArrow.fp-prev::before{
+    content: "\f137";
+}
+
+/*flecha derecha*/
+.fp-controlArrow.fp-next{
+    right: 80px;
+}
+
+.fp-controlArrow.fp-next::before{
+    content:"\f138" ;
+}
+
+/*la clase que quitamos y ponemos durante el scroll*/
+.glitch-tansicion{
+    animation: glitch-anim 0.2s infinite;
+}
+
+/*los efectos como tal de la animacion*/
+@keyframes glitch-anim{
+    0% {filter: hue-rotate(0deg) invert(0%); transform: skew(0deg);}
+    20% {filter: hue-rotate(90deg) invert(10%); transform: skew(2deg) translate(-5px,3px);}
+    50% {filter: hue-rotate(-90deg) invert(5%); transform: skew(-3deg) translate(4px,-4px);}
+    75%{filter: hue-rotate(180deg) invert(15%); transform: skew(1deg) translate(-2px,5px);}
+    100%{filter:hue-rotate(0deg) invert(0%); transform: skew(0deg);}
+}
+
+
+#SeccionInicio{
+background-image: url(/img/Soda1.jpg);
+background-size: cover;
+background-position: center;
 }
