@@ -8,15 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!--Estilos de fullpage.js-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Font Awesome cdn para flechas customizadsa-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Shojumaru&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Nunito:ital@1&family=Shojumaru&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles1.css">
 </head>
 <body style="background-color: #FFFACD;">
 
 
-<nav class="navbar fixed-top navbar-expand justify-content-start navbar-dark p-3 shadow-lg" style="background-color: #4d694e;">
+<nav class="navbar fixed-top navbar-expand justify-content-start navbar-dark p-2 shadow-lg rounded-bottom" style="background-color: #0b0121;">
 <!--Menu de navegacion funcional-->
 <ul id="menu" class="navbar-nav gap-4">
     <li data-menuanchor="inicio" class="navbar-brand titulo"><a href="#inicio" class="nav-link">Inicio <img src="https://flagcdn.com/jp.svg" class="rounded shadow-lg" alt="Japón" style="width: 40px; height: 24px; object-fit: cover; margin-left: 8px; margin-top: -3px;"></a></li>
@@ -32,29 +35,268 @@
 <div id="fullpage">
 
     <!--Seccion de Inicio-->
-    <div class="section" >
-        <h1 class="purple">Japanese Sodas</h1>
-        <p class="purple">炭酸飲料はいかがですか？</p>
+    <div class="section" id="SeccionInicio" data-anchor="inicio">
+    
+        <!-- Slide 1 -->
+        <div class="slide" id="slide1">
+        
+            <div class="container-sm mt-sm-1">
+                <div class="row align-items-center"> 
+                
+                    <div class="col-6">
+                        <h1 class="purple">Japanese Soda</h1>
+                        <p class="purple rounded p-1 d-inline-block" style="background-color: rgba(192, 166, 166, 0.536);">炭酸飲料はいかがですか？</p>
+                    </div>
+                
+                    <div class="col-6">
+                            <div class="card mb-3 nunito-fuente" style="max-width: 28rem; background-color: rgba(192, 166, 166, 0.536); color: #0b0121; border-radius: 30px; overflow: hidden;">
+                                <div class="card-header" style="background-color: transparent; border-bottom: 1px solid rgba(11, 1, 33, 0.2);">
+                                    Queres Gaseosa
+                                </div>
+                                <div class="card-body">
+                                <h5 class="card-title">Marcas de soda en japon</h5>
+                                <p class="card-text">Japon ofrece una amplia variedad de bebidas de soda desde iconicas para festivales hasta concientes para la salud:</p>
+                                </div>
+                            </div>  
+
+                            <div class="card nunito-fuente" style="max-width: 28rem; background-color: rgba(192, 166, 166, 0.536); color: #0b0121; border-radius: 30px; overflow: hidden;">
+                        <ul class="list-group list-group-flush">
+                    
+                            <li class="list-group-item bg-transparent" style="color: #0b0121; border-color: rgba(11, 1, 33, 0.2);">Ramune</li>
+                            <li class="list-group-item bg-transparent" style="color: #0b0121; border-color: rgba(11, 1, 33, 0.2);">Calpis Soda</li>
+                            <li class="list-group-item bg-transparent" style="color: #0b0121; border-color: transparent;">Pocari Sweat</li>
+                        </ul>
+                    </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Seccion de presentacion-->
-    <div class="section" >
-        <h2 class="purple">Que gaseosas toman en japon?</h2>
+    <div class="section" id="SeccionPresentacion" data-anchor="presentacion">
+    
+    <!-- Slide 1: Ramune -->
+    <div class="slide">
+        <div class="container-sm text-center">
+            <h2 class="purple">Ramune (ラムネ)</h2>
+            <p class="purple d-inline-block rounded p-2" style="background-color: rgba(199, 132, 197); border-radius: 15px;">
+                La bebida clásica de los festivales de verano, famosa por su botella sellada con una canica de vidrio.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Slide 2: Calpis Soda -->
+    <div class="slide">
+        <div class="container-sm text-center">
+            <h2 class="purple">Calpis Soda (カルピスソーダ)</h2>
+            <p class="purple d-inline-block rounded p-2" style="background-color: rgba(199, 132, 197); border-radius: 15px">
+                Una bebida carbonatada suave con un toque lácteo, ofreciendo un perfil dulce y ligeramente ácido.
+            </p>
+        </div>
     </div>
 
-    <!--Productos/servicios-->
-    <div class="section">
-        <h2 class="purple">Productos</h2>
+    <!-- Slide 3: Pocari Sweat -->
+    <div class="slide">
+        <div class="container-sm text-center">
+            <h2 class="purple">Pocari Sweat (ポカリスエット)</h2>
+            <p class="purple d-inline-block rounded p-2" style="background-color: rgb(199, 132, 197); border-radius: 15px">
+                Aunque no es gaseosa, es la bebida isotónica japonesa por excelencia para rehidratarse.
+            </p>
+        </div>
     </div>
 
-    <!--Galeria-->
-    <div class="section">
-        <h2 class="purple">Galeria de Imagenes</h2>
     </div>
 
-    <div class="section">
-        <h2 class="purple">Contactanos</h2>
+    <!-- Productos/Servicios -->
+<div class="section" id="SeccionProductos" data-anchor="productos">
+    
+    <div class="container-sm mt-sm-4 text-center">
+        
+    
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="purple">Productos y Sabores</h2>
+                <p class="purple rounded p-2 d-inline-block" style="background-color: rgba(192, 166, 166, 0.536);">
+                    Descubre qué hace únicas a estas bebidas y sus variedades más populares en Japón.
+                </p>
+            </div>
+        </div>
+
+        <!-- Fila de las 3 tarjetas de productos -->
+        <div class="row justify-content-center">
+            
+            <!-- Columna 1: Ramune -->
+            <div class="col-4">
+                <!-- h-100 hace que las 3 tarjetas tengan exactamente la misma altura -->
+                <div class="card h-100" style="background-color: rgba(192, 166, 166, 0.536); color: #0b0121; border-radius: 30px; overflow: hidden; border: none;">
+                    <div class="card-header font-weight-bold" style="background-color: transparent; border-bottom: 1px solid rgba(11, 1, 33, 0.2);">
+                        <h5 class="m-0">Ramune (ラムネ)</h5>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><strong>¿Qué la distingue?</strong><br> Famosa por su botella de vidrio sellada con una canica (botella Codd). Al empujar la canica hacia adentro, libera un alto nivel de gas carbonatado, ideal para el calor de los festivales.</p>
+                        <p class="card-text mb-1"><strong>Sabores top:</strong></p>
+                        <ul class="list-unstyled">
+                            <li>🍬 Original (Limón-Lima)</li>
+                            <li>🍈 Melón</li>
+                            <li>🍓 Fresa</li>
+                            <li>🍇 Uva</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 2: Calpis Soda -->
+            <div class="col-4">
+                <div class="card h-100" style="background-color: rgba(192, 166, 166, 0.536); color: #0b0121; border-radius: 30px; overflow: hidden; border: none;">
+                    <div class="card-header font-weight-bold" style="background-color: transparent; border-bottom: 1px solid rgba(11, 1, 33, 0.2);">
+                        <h5 class="m-0">Calpis Soda (カルピス)</h5>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><strong>¿Qué la distingue?</strong><br> Es una bebida con una base de leche fermentada y ácido láctico. Ofrece un perfil de sabor único que es dulce, cremoso y ligeramente ácido, similar a un yogur ligero con gas.</p>
+                        <p class="card-text mb-1"><strong>Sabores top:</strong></p>
+                        <ul class="list-unstyled">
+                            <li>🥛 Original (Lácteo dulce)</li>
+                            <li>🍑 Melocotón (Momo)</li>
+                            <li>🥭 Mango</li>
+                            <li>🍈 Melón cremoso</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna 3: Pocari Sweat -->
+            <div class="col-4">
+                <div class="card h-100" style="background-color: rgba(192, 166, 166, 0.536); color: #0b0121; border-radius: 30px; overflow: hidden; border: none;">
+                    <div class="card-header font-weight-bold" style="background-color: transparent; border-bottom: 1px solid rgba(11, 1, 33, 0.2);">
+                        <h5 class="m-0">Pocari Sweat (ポカリ)</h5>
+                    </div>
+                    <div class="card-body text-start">
+                        <p class="card-text"><strong>¿Qué la distingue?</strong><br> A diferencia de las otras, no tiene gas. Es una bebida isotónica diseñada científicamente para reponer electrolitos y agua rápidamente en el cuerpo. Es extremadamente ligera y nada empalagosa.</p>
+                        <p class="card-text mb-1"><strong>Sabores top:</strong></p>
+                        <ul class="list-unstyled">
+                            <li>🍋 Original (Suave toque a toronja/pomelo)</li>
+                            <li>💧 Ion Water (Versión reducida en azúcar)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+</div>
+
+    <!-- Galería -->
+<div class="section" id="SeccionGaleria" data-anchor="galeria">
+    <div class="container-sm mt-sm-4 text-center">
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="purple">Galería de Imágenes</h2>
+                <p class="purple rounded p-2 d-inline-block" style="background-color: rgba(192, 166, 166, 0.536);">
+                    Un vistazo a la estética de las bebidas japonesas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Fila de la galería -->
+        <div class="row justify-content-center">
+            
+            <!-- Imagen 1 -->
+            <div class="col-4">
+                <div class="p-2 shadow-sm" style="background-color: rgba(192, 166, 166, 0.536); border-radius: 30px;">
+                
+                    <img src="/img/Inicio.jpg" alt="Galería Soda 1" class="img-fluid w-100" style="height: 350px; object-fit: cover; border-radius: 20px;">
+                </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="col-4">
+                <div class="p-2 shadow-sm" style="background-color: rgba(192, 166, 166, 0.536); border-radius: 30px;">
+                    
+                    <img src="/img/Soda2.jpg" alt="Galería Soda 2" class="img-fluid w-100" style="height: 350px; object-fit: cover; border-radius: 20px;">
+                </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="col-4">
+                <div class="p-2 shadow-sm" style="background-color: rgba(192, 166, 166, 0.536); border-radius: 30px;">
+                    
+                    <img src="/img/Soda3.jpg" alt="Galería Soda 3" class="img-fluid w-100" style="height: 350px; object-fit: cover; border-radius: 20px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!--Contacto-->
+    <div class="section" id="SeccionContacto" data-anchor="contacto">
+    <!-- El container-sm asegura que tu jQuery pueda ocultar y mostrar la sección con fadeIn -->
+    <div class="container-sm mt-sm-4 text-center">
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="purple">Desarrolladores</h2>
+                <p class="purple rounded p-2 d-inline-block" style="background-color: rgba(192, 166, 166, 0.536);">
+                    Proyecto académico para la Universidad Don Bosco.
+                </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-start">
+            
+            
+            <div class="col-6">
+                <div class="card h-100" style="background-color: rgba(192, 166, 166, 0.536); color: #0b0121; border-radius: 30px; overflow: hidden; border: none;">
+                    <div class="card-header font-weight-bold text-center" style="background-color: transparent; border-bottom: 1px solid rgba(11, 1, 33, 0.2);">
+                        <h5 class="m-0">Desarrollador 1</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush" style="border-radius: 15px; overflow: hidden;">
+                            <li class="list-group-item bg-transparent" style="border-color: rgba(11, 1, 33, 0.2);">
+                                <strong>Nombres:</strong> Herberth Rodrigo
+                            </li>
+                            <li class="list-group-item bg-transparent" style="border-color: rgba(11, 1, 33, 0.2);">
+                                <strong>Apellidos:</strong> Flores Turcios
+                            </li>
+                            <li class="list-group-item bg-transparent" style="border-color: transparent;">
+                                <strong>Carnet:</strong> <span class="text-muted fw-bold">FT240273</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-6">
+                <div class="card h-100" style="background-color: rgba(192, 166, 166, 0.536); color: #0b0121; border-radius: 30px; overflow: hidden; border: none;">
+                    <div class="card-header font-weight-bold text-center" style="background-color: transparent; border-bottom: 1px solid rgba(11, 1, 33, 0.2);">
+                        <h5 class="m-0">Desarrollador 2</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush" style="border-radius: 15px; overflow: hidden;">
+                            <li class="list-group-item bg-transparent" style="border-color: rgba(11, 1, 33, 0.2);">
+                                <strong>Nombres:</strong> Daniel Alejandro
+                            </li>
+                            <li class="list-group-item bg-transparent" style="border-color: rgba(11, 1, 33, 0.2);">
+                                <strong>Apellidos:</strong> Suria Mendoza
+                            </li>
+                            <li class="list-group-item bg-transparent" style="border-color: transparent;">
+                                <strong>Carnet:</strong> <span class="text-muted fw-bold">SM240271</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 </div>
 
@@ -62,17 +304,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
 
-<script>
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-        anchors: ['inicio','presentacion','productos','galeria','contacto'],
-        menu: '#menu',
-        navigation: true, 
-        navigationPosition: 'right',
-        scrollingSpeed: 700
-    });
-});
-</script>
-
+<script src="main.js"></script>
 </body>
 </html>
